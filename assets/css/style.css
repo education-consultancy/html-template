@@ -6085,7 +6085,10 @@ div.tagcloud a:hover {
 }
 
 .academic-thumb {
+  box-shadow: 0px 10px 40px rgba(28, 51, 84, 0.07);
   overflow: hidden;
+  max-width: 410px;
+  max-height: 240px;
 }
 .academic-thumb:hover img {
   transform: scale3d(1.1, 1.1, 1.1);
@@ -6132,7 +6135,12 @@ div.tagcloud a:hover {
 }
 
 .academic-body {
+  overflow: hidden;
   margin-bottom: 30px;
+  height: 80px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 .academic-body p {
   font-size: 15px;
@@ -6168,6 +6176,8 @@ div.tagcloud a:hover {
 }
 .academic-tutor img {
   margin-right: 10px;
+  max-width: 30px;
+  border-radius: 2px;
 }
 .academic-tutor a {
   font-size: 15px;
@@ -6308,6 +6318,25 @@ div.tagcloud a:hover {
   width: 100%;
   background: #141517;
   opacity: 0.6;
+  z-index: -1;
+}
+
+.hero-arera.course-item-height-university {
+  min-height: 350px;
+  align-items: center;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-arera.course-item-height-university::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #141517;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -6703,6 +6732,16 @@ div.tagcloud a:hover {
   border: 3px solid #ffffff;
   box-shadow: 0px 3px 10px rgba(17, 32, 81, 0.08);
   border-radius: 50%;
+  object-fit: scale-down;
+}
+
+.course-meta-img-country img {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 3px 10px rgba(17, 32, 81, 0.08);
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .course-detelis-meta {
@@ -6976,12 +7015,11 @@ div.tagcloud a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 15px;
+  padding-left: 15px;
 }
 
 .course-video-price span {
-  font-size: 30px;
   color: #141517;
-  font-weight: 900;
 }
 
 .course-video-body {
