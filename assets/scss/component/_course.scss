@@ -684,7 +684,7 @@
 		height: 100%;
 		width: 100%;
 		background: $heading-color;
-		opacity: 0.7;
+		opacity: 0.6;
 		z-index: -1;
 	}
 	min-height: 350px;
@@ -692,6 +692,8 @@
 	display: flex;
 	position: relative;
 	z-index: 2;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .bar-secrch-icon input {
 	height: 60px;

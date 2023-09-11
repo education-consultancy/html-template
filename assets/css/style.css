@@ -3047,6 +3047,7 @@ div.mean-container a.meanmenu-reveal {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 15px;
+  padding-top: 25px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-course-1-text h2 {
@@ -3342,6 +3343,7 @@ div.mean-container a.meanmenu-reveal {
 }
 .student-choose-thumb img {
   max-width: 100%;
+  background: #d49e69;
 }
 
 .sitdent-choose-content {
@@ -6292,6 +6294,8 @@ div.tagcloud a:hover {
   display: flex;
   position: relative;
   z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero-arera.course-item-height::before {
   position: absolute;
@@ -6299,7 +6303,7 @@ div.tagcloud a:hover {
   height: 100%;
   width: 100%;
   background: #141517;
-  opacity: 0.7;
+  opacity: 0.6;
   z-index: -1;
 }
 
